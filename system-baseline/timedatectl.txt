@@ -1,0 +1,7 @@
+               Local time: So 2026-06-14 13:03:19 CEST
+           Universal time: So 2026-06-14 11:03:19 UTC
+                 RTC time: So 2026-06-14 11:03:19
+                Time zone: Europe/Berlin (CEST, +0200)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no

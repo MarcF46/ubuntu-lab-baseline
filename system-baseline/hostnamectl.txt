@@ -1,0 +1,16 @@
+  Static hostname: ubuntu-lab
+        Icon name: computer-laptop
+          Chassis: laptop 💻
+Chassis Asset Tag: Chassis Asset Tag
+       Machine ID: 8479982afea94265ab70674b7c86e0b5
+          Boot ID: 9c356fcf9823416a9223d03e085fe5ec
+ Operating System: Ubuntu 26.04 LTS
+           Kernel: Linux 7.0.0-22-generic
+     Architecture: x86-64
+  Hardware Vendor: HP
+   Hardware Model: HP 250 15.6 inch G9 Notebook PC
+     Hardware SKU: 7N034ES#ABD
+ Hardware Version: Type1ProductConfigId
+ Firmware Version: F.71
+    Firmware Date: Fri 2025-11-21
+     Firmware Age: 6month 3w 1d
