@@ -1,0 +1,31 @@
+========================================
+ SSH Baseline Health Check
+========================================
+
+[INFO] System:
+ubuntu-lab
+
+[INFO] Aktueller Benutzer:
+marc
+
+[CHECK] Prüfe, ob openssh-server installiert ist...
+[OK] openssh-server ist installiert.
+
+[CHECK] Prüfe, ob ssh.service aktiv ist...
+[OK] ssh.service ist aktiv.
+
+[CHECK] Prüfe, ob ssh.service enabled ist...
+[OK] ssh.service ist für den Systemstart aktiviert.
+
+[CHECK] Prüfe, ob Port 22 lauscht...
+[OK] Port 22 lauscht.
+
+[INFO] Letzte SSH-Logeinträge:
+Jun 17 17:04:17 ubuntu-lab systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Jun 17 17:04:17 ubuntu-lab sshd[10049]: Server listening on 0.0.0.0 port 22.
+Jun 17 17:04:17 ubuntu-lab sshd[10049]: Server listening on :: port 22.
+Jun 17 17:04:17 ubuntu-lab systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+
+========================================
+[RESULT] SSH Baseline Check abgeschlossen.
+========================================

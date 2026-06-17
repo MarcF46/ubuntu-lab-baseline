@@ -1,0 +1,1 @@
+SSH wurde auf dem Ubuntu-Lab-System geprüft. Der Dienst läuft aktiv, ist für den Systemstart aktiviert und lauscht auf Port 22. Textnachweise wurden unter docs/operations/ abgelegt. Private Screenshotnachweise liegen geschützt unter docs/private/.
