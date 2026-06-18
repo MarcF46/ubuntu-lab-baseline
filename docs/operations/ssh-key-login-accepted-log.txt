@@ -1,0 +1,2 @@
+Jun 18 10:07:39 ubuntu-lab sshd-session[10667]: Accepted publickey for marc from 127.0.0.1 port 40938 ssh2: ED25519 SHA256:6DR2mfO8KYEyro4R+KcGZ1YDIApDOUKfzM7pfnZYyhU
+Jun 18 10:09:37 ubuntu-lab sshd-session[10826]: Accepted publickey for marc from 127.0.0.1 port 39626 ssh2: ED25519 SHA256:6DR2mfO8KYEyro4R+KcGZ1YDIApDOUKfzM7pfnZYyhU
