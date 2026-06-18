@@ -1,4 +1,4 @@
-# Future Lab Topics
+# Spätere Lab-Themen
 
 ## Zweck
 
