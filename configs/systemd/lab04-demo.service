@@ -1,0 +1,10 @@
+[Unit]
+Description=Lab04 Demo Service for systemd failure diagnosis
+Documentation=file:/home/marc/projects/ubuntu-lab-baseline/scripts/lab04-demo-service.sh
+
+[Service]
+Type=oneshot
+ExecStart=/home/marc/projects/ubuntu-lab-baseline/scripts/lab04-demo-service.sh
+
+[Install]
+WantedBy=multi-user.target
