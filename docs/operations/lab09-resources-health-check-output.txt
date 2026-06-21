@@ -1,0 +1,33 @@
+
+## Resources Health Check
+Zeitpunkt: 2026-06-22T01:33:15+02:00
+
+## CPU und Load
+Logische CPU-Kerne: 12
+Load Average 1/5/15 Minuten: 0.10 / 0.18 / 0.26
+Load bezogen auf CPU-Kerne: 1%
+[OK] Load ist aktuell unauffällig.
+
+## RAM
+RAM gesamt: 14893 MiB
+RAM genutzt: 5962 MiB (40%)
+RAM verfügbar: 8930 MiB (60%)
+[OK] RAM-Verfügbarkeit ist aktuell unauffällig.
+
+## Swap
+Swap gesamt: 4095 MiB
+Swap genutzt: 0 MiB
+[OK] Swap wird aktuell nicht genutzt.
+
+## Top Prozesse
+Auffälligster Prozess nach CPU: Isolated (PID 7098, Web% CPU)
+Auffälligster Prozess nach RAM: Isolated (PID 7098, Web% RAM)
+[OK] Top-Prozesse wurden ermittelt. Fachliche Einordnung bleibt erforderlich.
+
+## Failed systemd Units
+Fehlgeschlagene systemd Units: 0
+[OK] Keine fehlgeschlagenen systemd Units sichtbar.
+
+## Ergebnis
+[RESULT] Resources Health Check erfolgreich.
+Resources-Health-Check Exit-Code: 0
