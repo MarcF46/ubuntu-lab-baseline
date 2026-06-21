@@ -1,0 +1,10 @@
+[Unit]
+Description=Lab05 scheduled Lab04 health check service
+Documentation=file:/home/marc/projects/ubuntu-lab-baseline/scripts/check-lab04-systemd-demo.sh
+
+[Service]
+Type=oneshot
+ExecStart=/home/marc/projects/ubuntu-lab-baseline/scripts/check-lab04-systemd-demo.sh
+User=root
+WorkingDirectory=/home/marc/projects/ubuntu-lab-baseline
+
