@@ -1,0 +1,26 @@
+# Lab 02 - Benutzer, Gruppen und sudo Baseline
+
+Zeitpunkt:
+2026-06-21T12:10:57+02:00
+
+[whoami]
+marc
+
+[id]
+uid=1000(marc) gid=1000(marc) groups=1000(marc),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),111(lpadmin),114(lxd)
+
+[groups]
+marc adm cdrom sudo dip plugdev users lpadmin lxd
+
+[getent passwd marc]
+marc:x:1000:1000:Marc:/home/marc:/bin/bash
+
+[getent group sudo]
+sudo:x:27:marc
+
+[sudo -l]
+User marc may run the following commands on ubuntu-lab:
+    (ALL : ALL) ALL
+
+[Home-Verzeichnis]
+drwxr-x--- 21 marc marc 4096 Jun 14 13:27 /home/marc

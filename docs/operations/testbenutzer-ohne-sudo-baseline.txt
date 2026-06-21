@@ -1,0 +1,28 @@
+# Lab 02 - Testbenutzer ohne sudo-Rechte
+
+Zeitpunkt:
+2026-06-21T12:16:05+02:00
+
+[Benutzerkonto]
+labuser01:x:1001:1001::/home/labuser01:/bin/bash
+
+[ID und Gruppen]
+uid=1001(labuser01) gid=1001(labuser01) groups=1001(labuser01)
+
+labuser01 : labuser01
+
+[Home-Verzeichnis]
+drwxr-x--- 2 labuser01 labuser01 4096 Jun 21 12:16 /home/labuser01
+
+[Test: Wer bin ich als labuser01?]
+labuser01
+uid=1001(labuser01) gid=1001(labuser01) groups=1001(labuser01)
+/home/marc/projects/ubuntu-lab-baseline
+
+[Test: sudo ohne Adminrechte]
+sudo: I'm sorry labuser01. I'm afraid I can't do that
+Exit-Code sudo-Test: 1
+
+[Test: Zugriff auf /etc/shadow]
+head: cannot open '/etc/shadow' for reading: Permission denied
+Exit-Code shadow-Test: 1
