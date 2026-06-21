@@ -1,0 +1,26 @@
+
+## Storage Health Check
+Zeitpunkt: 2026-06-21T23:07:13+02:00
+
+## Root-Dateisystem
+Root-Dateisystem: Typ=ext4 Nutzung=10% Frei=130G
+[OK] Root-Dateisystem ist unkritisch ausgelastet.
+
+## /var/log
+/var/log Größe: 65M
+[OK] /var/log ist aktuell unauffällig.
+
+## Swap
+[OK] Swap ist vorhanden oder aktiv konfiguriert.
+
+## Mount-Grundzustand
+[OK] Root-Mount ist sichtbar.
+[OK] Blockgeräte können abgefragt werden.
+
+## Hohe Auslastung weiterer Dateisysteme
+Nicht-System-Dateisysteme ab 85% Nutzung: 1
+[WARN] Mindestens ein weiteres Dateisystem ist stark ausgelastet. Details mit df -hT prüfen.
+
+## Ergebnis
+[RESULT] Storage Health Check erfolgreich mit Warnungen.
+Storage-Health-Check Exit-Code: 0
