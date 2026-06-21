@@ -1,0 +1,11 @@
+Die Storage-Baseline des Ubuntu-Lab-Systems wurde erstellt und dokumentiert.
+
+Geprüft wurden Dateisysteme, Mountpunkte, Blockgeräte, Swap, das Log-Verzeichnis und der Projektordner.
+
+Das Root-Dateisystem ist aktuell unkritisch ausgelastet. /var/log ist klein, Swap ist vorhanden und aktuell nicht genutzt. Die externe NTFS-Platte Dose4 ist mit hoher Auslastung sichtbar und sollte in späteren Backup-/Storage-Labs bewusst beobachtet werden.
+
+Zusätzlich wurden ein Runbook, eine Checkliste und eine Troubleshooting-Karte für typische Storage-Probleme erstellt.
+
+Betriebliche Bewertung: Storage ist ein grundlegender Diagnosebereich. Volle Dateisysteme, fehlende Mounts oder stark wachsende Logs können Updates, Services, Backups und Anwendungen gleichzeitig beeinflussen.
+
+Nächster professioneller Schritt: Aufbau eines kleinen Storage-Health-Checks als wiederverwendbares Prüfskript.
