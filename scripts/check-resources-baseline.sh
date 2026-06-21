@@ -64,8 +64,8 @@ else
 fi
 
 section "Top Prozesse"
-top_cpu_process="$(ps -eo pid=,comm=,%cpu= --sort=-%cpu | awk 'NR==1 {print $2 " (PID " $1 ", " $3 "% CPU)"}')"
-top_mem_process="$(ps -eo pid=,comm=,%mem= --sort=-%mem | awk 'NR==1 {print $2 " (PID " $1 ", " $3 "% RAM)"}')"
+top_cpu_process="$(ps -eo pid=,%cpu=,comm= --sort=-%cpu | awk 'NR==1 {pid=$1; cpu=$2; $1=""; $2=""; sub(/^ +/, ""); print $0 " (PID " pid ", " cpu "% CPU)"}')"
+top_mem_process="$(ps -eo pid=,%mem=,comm= --sort=-%mem | awk 'NR==1 {pid=$1; mem=$2; $1=""; $2=""; sub(/^ +/, ""); print $0 " (PID " pid ", " mem "% RAM)"}')"
 
 printf "Auffälligster Prozess nach CPU: %s\n" "${top_cpu_process:-nicht ermittelt}"
 printf "Auffälligster Prozess nach RAM: %s\n" "${top_mem_process:-nicht ermittelt}"

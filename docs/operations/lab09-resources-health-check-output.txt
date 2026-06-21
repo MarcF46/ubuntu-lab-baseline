@@ -1,17 +1,17 @@
 
 ## Resources Health Check
-Zeitpunkt: 2026-06-22T01:33:15+02:00
+Zeitpunkt: 2026-06-22T01:34:01+02:00
 
 ## CPU und Load
 Logische CPU-Kerne: 12
-Load Average 1/5/15 Minuten: 0.10 / 0.18 / 0.26
-Load bezogen auf CPU-Kerne: 1%
+Load Average 1/5/15 Minuten: 0.43 / 0.27 / 0.29
+Load bezogen auf CPU-Kerne: 4%
 [OK] Load ist aktuell unauffällig.
 
 ## RAM
 RAM gesamt: 14893 MiB
-RAM genutzt: 5962 MiB (40%)
-RAM verfügbar: 8930 MiB (60%)
+RAM genutzt: 5836 MiB (39%)
+RAM verfügbar: 9056 MiB (61%)
 [OK] RAM-Verfügbarkeit ist aktuell unauffällig.
 
 ## Swap
@@ -20,8 +20,8 @@ Swap genutzt: 0 MiB
 [OK] Swap wird aktuell nicht genutzt.
 
 ## Top Prozesse
-Auffälligster Prozess nach CPU: Isolated (PID 7098, Web% CPU)
-Auffälligster Prozess nach RAM: Isolated (PID 7098, Web% RAM)
+Auffälligster Prozess nach CPU: Isolated Web Co (PID 7098, 10.5% CPU)
+Auffälligster Prozess nach RAM: Isolated Web Co (PID 7098, 8.0% RAM)
 [OK] Top-Prozesse wurden ermittelt. Fachliche Einordnung bleibt erforderlich.
 
 ## Failed systemd Units
