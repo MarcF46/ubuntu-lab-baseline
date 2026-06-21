@@ -1,0 +1,7 @@
+Der Lab04-Demo-Service wurde kontrolliert in Normalzustand, Fehlerzustand und Wiederherstellung geprüft.
+
+systemd meldete im simulierten Fehlerfall Result=exit-code und ExecMainStatus=42. Die Logauswertung zeigte Current mode: fail als Ursache.
+
+Nach Rückstellung der Steuerdatei auf ok, reset-failed und erneutem Start wurde der Dienst erfolgreich verifiziert. Der wiederholbare Health-Check wurde mit Exit-Code 0 abgeschlossen.
+
+Die Ergebnisse wurden als Demo-Service, systemd-Unit, Health-Check-Skript, Health-Check-Nachweis, Runbook, Troubleshooting-Karte und Checkliste dokumentiert.
