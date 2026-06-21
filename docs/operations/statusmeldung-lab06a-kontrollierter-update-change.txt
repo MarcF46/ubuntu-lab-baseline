@@ -1,0 +1,11 @@
+Der kontrollierte Update-Change für das Ubuntu-Lab-System wurde vorbereitet, durchgeführt und nachgeprüft.
+
+Vor der Installation wurden der Systemzustand, verfügbare Updates, Reboot-Zustand, SSH-Service, systemd-Fehlerzustände, Speicherplatz und apt-Historie dokumentiert. Zusätzlich wurde eine private Rollback-/Referenzsicherung mit Paketversionen, manuell markierten Paketen, apt-Historie und apt-Konfiguration erstellt.
+
+Der echte Update-Lauf wurde anschließend kontrolliert mit apt-get upgrade durchgeführt. Der Update-Prozess wurde mit Exit-Code 0 beendet.
+
+Nach dem Update wurden keine verbleibenden Updates festgestellt. Es war kein aktueller Reboot-Marker vorhanden. Der SSH-Service war weiterhin active und systemd meldete keine fehlgeschlagenen Units.
+
+Der Change wurde nicht blind durchgeführt, sondern mit Vorprüfung, Referenzsicherung, Durchführung, Nachprüfung und Vergleich dokumentiert.
+
+Betriebliche Bewertung: Der Update-Change wurde erfolgreich abgeschlossen. Für produktive Systeme wären zusätzlich ein echtes Backup oder ein VM-Snapshot, ein Wartungsfenster, Monitoring, Freigabeprozess und ein formaler Rollback-Plan erforderlich.
