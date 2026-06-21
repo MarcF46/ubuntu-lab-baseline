@@ -1,0 +1,34 @@
+========================================
+ User / Groups / sudo Health Check
+========================================
+
+[INFO] System:
+ubuntu-lab
+
+[CHECK] Prüfe, ob Benutzer marc existiert...
+[OK] Benutzer marc existiert.
+
+[CHECK] Prüfe, ob marc Mitglied der Gruppe sudo ist...
+[OK] marc ist Mitglied der Gruppe sudo.
+
+[CHECK] Prüfe, ob Benutzer labuser01 existiert...
+[OK] Benutzer labuser01 existiert.
+
+[CHECK] Prüfe, ob labuser01 keine sudo-Mitgliedschaft besitzt...
+[OK] labuser01 ist nicht Mitglied der Gruppe sudo.
+
+[CHECK] Prüfe Home-Verzeichnisse...
+[OK] /home/marc existiert.
+[OK] /home/labuser01 existiert.
+
+[CHECK] Prüfe, ob labuser01 /etc/shadow nicht lesen darf...
+[OK] labuser01 kann /etc/shadow nicht lesen.
+
+[INFO] Gruppenübersicht:
+uid=1000(marc) gid=1000(marc) groups=1000(marc),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),111(lpadmin),114(lxd)
+uid=1001(labuser01) gid=1001(labuser01) groups=1001(labuser01)
+
+========================================
+[RESULT] User / Groups / sudo Check erfolgreich.
+========================================
+Exit-Code: 0
