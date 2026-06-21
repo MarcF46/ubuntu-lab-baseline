@@ -1,0 +1,5 @@
+Der SSH-Dienst wurde im Ubuntu-Lab mit systemctl und journalctl geprüft. Der Dienst ist aktiv, enabled und die Systemzeit ist synchronisiert.
+
+Die Logauswertung zeigt nachvollziehbare Start-, Stop- und Login-Ereignisse. Der systemd-SSH-Health-Check wurde erfolgreich mit Exit-Code 0 abgeschlossen.
+
+Rohlogs wurden bewusst privat abgelegt. Die öffentliche Dokumentation enthält eine zusammenfassende Bewertung ohne sensible lokale Detailinformationen.
