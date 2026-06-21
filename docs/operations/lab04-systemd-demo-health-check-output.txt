@@ -1,0 +1,57 @@
+========================================
+ Lab04 systemd Demo Service Health Check
+========================================
+
+[INFO] Prüfe systemd-Unit: lab04-demo.service
+[OK] Unit ist systemd bekannt.
+
+[TEST 1] Normalzustand prüfen...
+[OK] Dienstlauf im Normalzustand erfolgreich.
+[INFO] Result=success
+[INFO] ExecMainStatus=0
+[OK] Normalzustand korrekt bewertet.
+
+[TEST 2] Fehlerzustand absichtlich erzeugen...
+[OK] Erwarteter Fehlerzustand wurde erzeugt.
+[INFO] is-failed=failed
+[INFO] Result=exit-code
+[INFO] ExecMainStatus=42
+[OK] Fehlerzustand korrekt erkannt.
+
+[TEST 3] Wiederherstellung prüfen...
+[OK] Dienst wurde nach Fix erfolgreich gestartet.
+[INFO] Result=success
+[INFO] ExecMainStatus=0
+[OK] Wiederherstellung korrekt verifiziert.
+
+[INFO] Letzte Logs des Demo-Dienstes:
+2026-06-21T17:01:38+02:00 ubuntu-lab systemd[1]: Starting lab04-demo.service - Lab04 Demo Service for systemd failure diagnosis...
+2026-06-21T17:01:38+02:00 ubuntu-lab lab04-demo-service.sh[24148]: Lab04 demo service started at 2026-06-21T17:01:38+02:00
+2026-06-21T17:01:38+02:00 ubuntu-lab lab04-demo-service.sh[24148]: Current mode: ok
+2026-06-21T17:01:38+02:00 ubuntu-lab lab04-demo-service.sh[24148]: Simulated success: service completed normally
+2026-06-21T17:01:38+02:00 ubuntu-lab systemd[1]: lab04-demo.service: Deactivated successfully.
+2026-06-21T17:01:38+02:00 ubuntu-lab systemd[1]: Finished lab04-demo.service - Lab04 Demo Service for systemd failure diagnosis.
+2026-06-21T17:03:09+02:00 ubuntu-lab systemd[1]: Starting lab04-demo.service - Lab04 Demo Service for systemd failure diagnosis...
+2026-06-21T17:03:09+02:00 ubuntu-lab lab04-demo-service.sh[24217]: Lab04 demo service started at 2026-06-21T17:03:09+02:00
+2026-06-21T17:03:09+02:00 ubuntu-lab lab04-demo-service.sh[24217]: Current mode: ok
+2026-06-21T17:03:09+02:00 ubuntu-lab lab04-demo-service.sh[24217]: Simulated success: service completed normally
+2026-06-21T17:03:09+02:00 ubuntu-lab systemd[1]: lab04-demo.service: Deactivated successfully.
+2026-06-21T17:03:09+02:00 ubuntu-lab systemd[1]: Finished lab04-demo.service - Lab04 Demo Service for systemd failure diagnosis.
+2026-06-21T17:03:09+02:00 ubuntu-lab systemd[1]: Starting lab04-demo.service - Lab04 Demo Service for systemd failure diagnosis...
+2026-06-21T17:03:09+02:00 ubuntu-lab lab04-demo-service.sh[24226]: Lab04 demo service started at 2026-06-21T17:03:09+02:00
+2026-06-21T17:03:09+02:00 ubuntu-lab lab04-demo-service.sh[24226]: Current mode: fail
+2026-06-21T17:03:09+02:00 ubuntu-lab lab04-demo-service.sh[24226]: Simulated failure: mode is fail
+2026-06-21T17:03:09+02:00 ubuntu-lab systemd[1]: lab04-demo.service: Main process exited, code=exited, status=42/n/a
+2026-06-21T17:03:09+02:00 ubuntu-lab systemd[1]: lab04-demo.service: Failed with result 'exit-code'.
+2026-06-21T17:03:09+02:00 ubuntu-lab systemd[1]: Failed to start lab04-demo.service - Lab04 Demo Service for systemd failure diagnosis.
+2026-06-21T17:03:09+02:00 ubuntu-lab systemd[1]: Starting lab04-demo.service - Lab04 Demo Service for systemd failure diagnosis...
+2026-06-21T17:03:09+02:00 ubuntu-lab lab04-demo-service.sh[24237]: Lab04 demo service started at 2026-06-21T17:03:09+02:00
+2026-06-21T17:03:09+02:00 ubuntu-lab lab04-demo-service.sh[24237]: Current mode: ok
+2026-06-21T17:03:09+02:00 ubuntu-lab lab04-demo-service.sh[24237]: Simulated success: service completed normally
+2026-06-21T17:03:09+02:00 ubuntu-lab systemd[1]: lab04-demo.service: Deactivated successfully.
+2026-06-21T17:03:09+02:00 ubuntu-lab systemd[1]: Finished lab04-demo.service - Lab04 Demo Service for systemd failure diagnosis.
+
+========================================
+[RESULT] Lab04 systemd Demo Service Check erfolgreich.
+========================================
+Lab04-Health-Check Exit-Code: 0
