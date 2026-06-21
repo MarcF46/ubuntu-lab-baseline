@@ -1,0 +1,9 @@
+Die apt-Update-Prüfung für das Ubuntu-Lab-System wurde durchgeführt und dokumentiert.
+
+Es wurden verfügbare Paketupdates geprüft, ein simulierter Upgrade-Lauf ausgeführt und die Ergebnisse bewertet. Der Dry-Run zeigte 20 aktualisierbare Pakete, keine neu zu installierenden Pakete, keine zu entfernenden Pakete und keine zurückgehaltenen Pakete.
+
+Zusätzlich wurde geprüft, ob ein aktueller Reboot-Marker vorhanden ist und ob offensichtliche kritische Paketgruppen wie Kernel, systemd, libc, SSH, Docker, Netzwerk oder Firewall betroffen sind. Zum Prüfzeitpunkt wurde kein aktueller Reboot-Marker gefunden und keine dieser kritischen Paketgruppen wurde in der gefilterten Upgrade-Liste erkannt.
+
+Die Rohoutputs wurden bewusst privat abgelegt. Öffentlich dokumentiert wurden die technische Bewertung, die Reboot-/Risiko-Bewertung, ein Runbook, eine Checkliste und eine Troubleshooting-Karte.
+
+Ein echter Update-Lauf wurde noch nicht durchgeführt. Als nächster professioneller Schritt ist ein kontrollierter Update-Change mit Backup- beziehungsweise Snapshot-Prüfung, Rollback-Planung, Wartungsfenster und Nachprüfung vorgesehen.
