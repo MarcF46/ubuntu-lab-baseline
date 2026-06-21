@@ -39,3 +39,52 @@ Im Lab kann ein Update direkt auf dem lokalen System getestet werden. In Produkt
 - Rollback wird vor der Änderung geplant, nicht erst nach dem Fehler.
 - Update ohne Nachprüfung ist nur halbe Betriebsarbeit.
 - Erst absichern, dann ändern, dann beweisen.
+
+## Lab 06b – Update-Automation mit Monitoring, Reboot-Erkennung und sicherer Freigabelogik
+
+## Zweck
+
+Diese spätere Trainingseinheit erweitert den kontrollierten Update-Change um Automatisierung und Monitoring.
+
+Ziel ist kein blinder Vollautomat, sondern ein sicherer Ablauf, der Updates erkennt, Risiken bewertet, Reboot-Bedarf meldet und nur klar freigegebene Update-Klassen automatisch ausführt.
+
+## Typisches Betriebsszenario
+
+Mehrere Linux-Server müssen regelmäßig auf Updates geprüft werden. Updates ohne Reboot-Bedarf und ohne kritische Paketgruppen könnten automatisiert verarbeitet werden. Updates mit Reboot-Bedarf oder kritischen Komponenten sollen dagegen im Monitoring sichtbar werden und eine manuelle Freigabe oder ein Wartungsfenster auslösen.
+
+## Möglicher Ablauf
+
+- verfügbare Updates regelmäßig prüfen
+- Security-Updates erkennen
+- kritische Paketgruppen erkennen
+- Reboot-Marker prüfen
+- Update-Lauf simulieren
+- Entscheidung treffen: automatisch ausführen oder Alarm/Ticket erzeugen
+- nach einem Update Health Checks durchführen
+- Reboot-Bedarf nach dem Update erneut prüfen
+- Ergebnis an Monitoring oder Statusdatei übergeben
+
+## Sicherheitslogik
+
+Automatisierung sollte nicht bedeuten, dass jedes Update blind installiert wird. Sinnvoll ist eine Policy-Logik:
+
+- unkritische Updates ohne Reboot-Bedarf: automatisierbar nach Freigaberegel
+- kritische Pakete: manuelle Prüfung oder Wartungsfenster
+- Reboot erforderlich: Monitoring-Alarm oder Ticket statt blindem Neustart
+- fehlgeschlagene Health Checks: Alarm und keine weiteren Änderungen
+
+## Monitoring-Idee
+
+Ein Skript könnte regelmäßig prüfen, ob Updates verfügbar sind, ob ein Reboot nötig ist und ob kritische Pakete betroffen sind. Das Ergebnis könnte später über Monitoring sichtbar gemacht werden, zum Beispiel als Statusdatei, Metrik oder Alert.
+
+## Betriebliche Bewertung
+
+Diese Einheit verbindet Paketverwaltung, Automatisierung, Monitoring, Change-Management und Betriebssicherheit. Sie ist damit besonders wertvoll für Cloud-Ops-, DevOps- und Plattform-Engineering-Grundlagen.
+
+## Merksätze
+
+- Automatisierung ersetzt nicht die Entscheidung.
+- Reboot wird gemeldet, nicht überrascht.
+- Kritische Pakete brauchen Freigabe.
+- Monitoring macht Update-Risiken sichtbar.
+- Gute Automation hat Bremsen, nicht nur Gas.
