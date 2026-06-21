@@ -1,0 +1,5 @@
+Benutzer- und Gruppenrechte wurden im Ubuntu-Lab geprüft. Der administrative Lab-Benutzer besitzt erwartungsgemäß sudo-Rechte. Zusätzlich wurde ein Testbenutzer ohne sudo-Rechte angelegt und geprüft.
+
+Der Testbenutzer konnte keine administrativen Befehle ausführen und keinen Zugriff auf /etc/shadow erhalten. Das Schutzverhalten entspricht der erwarteten Rechtevergabe.
+
+Die Ergebnisse wurden als Baseline, betriebliche Einordnung, Runbook, Checkliste und Troubleshooting-Karte dokumentiert.
