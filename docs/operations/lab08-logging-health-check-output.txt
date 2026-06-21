@@ -1,0 +1,32 @@
+
+## Logging Health Check
+Zeitpunkt: 2026-06-22T00:44:27+02:00
+
+## systemd-journald
+systemd-journald Zustand: active
+[OK] systemd-journald ist aktiv.
+
+## Journal Speicherverbrauch
+Archived and active journals take up 54.7M in the file system.
+[OK] Journal-Speicherverbrauch konnte ermittelt werden.
+
+## Warnungen der letzten Stunde
+Warn-/kritische Einträge letzte Stunde: 5
+[WARN] Warnungen vorhanden. Einordnung über journalctl erforderlich.
+
+## /var/log
+/var/log Größe: 65M
+[OK] /var/log ist aktuell unauffällig.
+
+## rsyslog
+rsyslog Zustand: active
+[OK] rsyslog ist vorhanden und aktiv.
+
+## Logrotate
+[OK] /etc/logrotate.conf ist vorhanden.
+Logrotate.d Dateien: 19
+[OK] Logrotate-Regeln sind vorhanden.
+
+## Ergebnis
+[RESULT] Logging Health Check erfolgreich mit Warnungen.
+Logging-Health-Check Exit-Code: 0
