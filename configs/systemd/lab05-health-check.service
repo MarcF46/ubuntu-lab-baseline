@@ -7,4 +7,3 @@ Type=oneshot
 ExecStart=/home/marc/projects/ubuntu-lab-baseline/scripts/check-lab04-systemd-demo.sh
 User=root
 WorkingDirectory=/home/marc/projects/ubuntu-lab-baseline
-

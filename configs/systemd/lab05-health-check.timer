@@ -1,0 +1,12 @@
+[Unit]
+Description=Lab05 scheduled Lab04 health check timer
+
+[Timer]
+OnActiveSec=30s
+OnUnitActiveSec=5min
+AccuracySec=10s
+Persistent=true
+Unit=lab05-health-check.service
+
+[Install]
+WantedBy=timers.target
