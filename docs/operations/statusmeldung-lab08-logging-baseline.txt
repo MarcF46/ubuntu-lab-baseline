@@ -1,0 +1,13 @@
+Die Logging-Baseline des Ubuntu-Lab-Systems wurde erstellt und dokumentiert.
+
+Geprüft wurden systemd-journald, Journal-Speicherverbrauch, Warn- und Fehlermeldungen, /var/log, Logrotate-Konfiguration und rsyslog.
+
+Der Journal-Dienst systemd-journald ist aktiv. Der Journal-Speicherverbrauch liegt bei rund 54,7M. /var/log liegt bei rund 65M und ist aktuell unauffällig. rsyslog ist vorhanden und aktiv.
+
+Im Journal wurden mehrere Warnungen aus den letzten Stunden sichtbar. Diese wurden nicht automatisch als Incident bewertet, sondern als Diagnosematerial eingeordnet. Viele Meldungen wirken wie typische Boot-, Desktop-, Hardware-, USB-, ACPI-, GNOME- oder Snap-Hintergrundmeldungen.
+
+Zusätzlich wurden ein Runbook, eine Checkliste und eine Troubleshooting-Karte für Logging, Journal und Logrotation erstellt.
+
+Betriebliche Bewertung: Logs sind zentrale Diagnose- und Nachweisquellen. Gleichzeitig können stark wachsende Logs selbst ein Storage-Risiko werden. Deshalb müssen Logzustand, Warnmuster und Logrotation regelmäßig geprüft werden.
+
+Nächster professioneller Schritt: Aufbau eines kleinen Logging-Health-Checks als wiederverwendbares Prüfskript.
