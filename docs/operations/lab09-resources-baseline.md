@@ -17,15 +17,15 @@ Der vollständige Rohoutput wurde bewusst privat abgelegt:
 ## Beobachteter Zustand
 
 - Logische CPU-Kerne: 12
-- Load Average 1/5/15 Minuten: 0.55 / 0.56 / 0.39
-- Load bezogen auf CPU-Kerne ungefähr: 5% der verfügbaren CPU-Kapazität
-- RAM gesamt:  MiB
-- RAM genutzt:  MiB (-nan%)
-- RAM verfügbar:  MiB
-- Swap gesamt:  MiB
-- Swap genutzt:  MiB
-- Auffälligster Prozess nach RAM: Isolated (Web% RAM)
-- Auffälligster Prozess nach CPU: firefox (9.6% CPU)
+- Load Average 1/5/15 Minuten: 0.49 / 0.62 / 0.45
+- Load bezogen auf CPU-Kerne ungefähr: 4% der verfügbaren CPU-Kapazität
+- RAM gesamt: 14893 MiB
+- RAM genutzt: 5203 MiB (35%)
+- RAM verfügbar: 9689 MiB
+- Swap gesamt: 4095 MiB
+- Swap genutzt: 0 MiB
+- Auffälligster Prozess nach RAM: Isolated Web Co (PID 7098, 6.5% RAM)
+- Auffälligster Prozess nach CPU: firefox (PID 6249, 9.6% CPU)
 
 ## Betriebliche Bewertung
 
@@ -44,3 +44,4 @@ Als nächster Schritt werden ein Runbook und eine Checkliste für Ressourcen- un
 - Swap ist die Notablage.
 - Load zeigt, wie viele Aufgaben auf Bedienung warten.
 - Ein kurzer Peak ist normal, dauerhafte Überlast ist ein Incident-Kandidat.
+- Maschinenlesbare Ausgaben sollten sprachunabhängig erzeugt werden.
