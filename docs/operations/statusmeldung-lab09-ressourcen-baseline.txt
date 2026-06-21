@@ -1,0 +1,13 @@
+Die Ressourcen-Baseline des Ubuntu-Lab-Systems wurde erstellt und dokumentiert.
+
+Geprüft wurden CPU, Load Average, RAM, Swap sowie auffällige Prozesse nach CPU- und Speicherverbrauch.
+
+Der aktuelle Zustand ist unauffällig: Das System verfügt über 12 logische CPU-Kerne. Der Load Average lag zum Prüfzeitpunkt deutlich unterhalb der verfügbaren CPU-Kapazität. Der RAM war ausreichend verfügbar, Swap wurde nicht genutzt.
+
+Auffällige Prozesse wurden fachlich eingeordnet. Im Desktop-Lab sind Firefox-/Browser-Prozesse als größere Speicherverbraucher erwartbar und nicht automatisch kritisch.
+
+Zusätzlich wurden ein Runbook, eine Checkliste und eine Troubleshooting-Karte für Ressourcen- und Prozessdiagnose erstellt.
+
+Betriebliche Bewertung: Ressourcenwerte müssen immer im Zusammenhang bewertet werden. Hohe CPU-, RAM- oder Load-Werte sind nicht automatisch Fehler. Entscheidend sind Dauer, Nutzerwirkung, Dienstzustand und passende Loghinweise.
+
+Nächster professioneller Schritt: Aufbau eines kleinen Ressourcen-Health-Checks als wiederverwendbares Prüfskript.
