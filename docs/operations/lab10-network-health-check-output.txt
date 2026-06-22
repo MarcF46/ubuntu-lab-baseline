@@ -1,0 +1,40 @@
+
+## Network Health Check
+Zeitpunkt: 2026-06-22T16:37:22+02:00
+
+## Interfaces und IP-Konfiguration
+Aktive Nicht-Loopback-Interfaces: 2
+Globale IPv4-Konfigurationen: 1
+Globale IPv6-Konfigurationen: 1
+[OK] Mindestens ein aktives Nicht-Loopback-Interface vorhanden.
+[OK] Mindestens eine globale IPv4-Adresse vorhanden.
+
+## Default Route
+[OK] Default Route ist vorhanden.
+Primäres Interface laut Default Route: eno1
+
+## DNS
+[OK] DNS-Auflösung für ubuntu.com erfolgreich.
+[OK] DNS-Auflösung für github.com erfolgreich.
+DNS ubuntu.com: ja
+DNS github.com: ja
+
+## Erreichbarkeit
+[OK] Ping auf 1.1.1.1 erfolgreich.
+[OK] Ping auf ubuntu.com erfolgreich.
+Ping IP-Ziel: ja
+Ping Domain-Ziel: ja
+
+## Lokale Ports
+Lokal lauschende TCP-Ports: 6
+Lokal gebundene UDP-Ports: 8
+[OK] Mindestens ein TCP-Listener ist vorhanden.
+[OK] SSH-Port 22 lauscht lokal.
+
+## Failed systemd Units
+Fehlgeschlagene systemd Units: 0
+[OK] Keine fehlgeschlagenen systemd Units sichtbar.
+
+## Ergebnis
+[RESULT] Network Health Check erfolgreich.
+Network-Health-Check Exit-Code: 0
