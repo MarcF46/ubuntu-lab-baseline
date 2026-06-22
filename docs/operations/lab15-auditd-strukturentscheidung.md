@@ -6,11 +6,11 @@ Nach Installation und Paketintegritätsprüfung wurde die aktuelle auditd-Strukt
 
 ## Beobachteter Zustand
 
-- /etc/audit/auditd.conf: nicht_vorhanden
-- /etc/audit/rules.d: nicht_vorhanden
-- /etc/audit/rules.d/audit.rules: nicht_vorhanden
+- /etc/audit/auditd.conf: vorhanden
+- /etc/audit/rules.d: vorhanden
+- /etc/audit/rules.d/audit.rules: vorhanden
 - augenrules Pfad: /usr/sbin/augenrules
-- auditctl Status Kurzform: enabled 1 failure 1 pid 22687 rate_limit 0 backlog_limit 8192 
+- auditctl Status Kurzform: enabled 1 failure 1 pid 22687 rate_limit 0 backlog_limit 8192
 - Anzahl aktuell geladener Audit-Regelzeilen: 0
 
 ## Aktuelle /etc/audit-Struktur
@@ -29,7 +29,7 @@ Nach Installation und Paketintegritätsprüfung wurde die aktuelle auditd-Strukt
 
 ## Entscheidung
 
-- Strukturentscheidung: rules_d_kontrolliert_anlegen
+- Strukturentscheidung: rules_d_verwenden
 
 ## Betriebliche Bewertung
 
