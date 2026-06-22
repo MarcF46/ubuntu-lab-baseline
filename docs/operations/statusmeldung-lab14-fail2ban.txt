@@ -1,0 +1,31 @@
+Lab 14 wurde erfolgreich abgeschlossen.
+
+Fail2ban wurde installiert, aktiviert und für den SSH-Dienst konfiguriert. Das sshd-Jail ist aktiv und über fail2ban-client abrufbar.
+
+Finaler Zustand:
+
+- Fail2ban Dienststatus: active
+- Fail2ban Autostartstatus: enabled
+- fail2ban-client antwortet mit pong.
+- sshd-Jail ist vorhanden.
+- Fail2ban-Konfigurationstest erfolgreich.
+- UFW ist aktiv.
+- SSH-Key-Login bleibt aktiv.
+- PasswordAuthentication ist deaktiviert.
+- X11Forwarding ist deaktiviert.
+- Security-Health-Check erfolgreich.
+- Fail2ban-Health-Check erfolgreich.
+
+Während der Einrichtung trat kurzzeitig ein Socket-/Readiness-Problem auf. Die Nachprüfung zeigte, dass Fail2ban anschließend normal lief. Daraus ergibt sich der wichtige Betriebslernpunkt, dass nach einem Dienst-Restart nicht nur systemctl active geprüft werden sollte, sondern auch die tatsächliche Ansprechbarkeit über den Client.
+
+Betriebliche Bewertung:
+
+Fail2ban ergänzt die bereits umgesetzte SSH-Härtung und die aktive UFW-Host-Firewall. Es ersetzt diese Schutzschichten nicht, sondern erweitert sie um eine Reaktion auf wiederholte fehlgeschlagene SSH-Anmeldeversuche.
+
+Merksätze:
+
+- UFW ist der Türsteher.
+- Fail2ban ist der Türsteher mit Gedächtnis.
+- systemctl zeigt den Prozesszustand.
+- Der Client-Test zeigt die Ansprechbarkeit.
+- Schutzschichten ergänzen sich, sie ersetzen sich nicht.
