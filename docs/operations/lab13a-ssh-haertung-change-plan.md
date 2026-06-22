@@ -13,11 +13,11 @@ Ein Team erkennt in einer Security-Baseline mehrere Härtungskandidaten. Änderu
 - SSH Dienststatus: active
 - SSH Autostartstatus: enabled
 - SSH Port 22 lokal sichtbar: ja
-- PermitRootLogin: nicht ermittelt
-- PasswordAuthentication: nicht ermittelt
-- PubkeyAuthentication: nicht ermittelt
-- PermitEmptyPasswords: nicht ermittelt
-- X11Forwarding: nicht ermittelt
+- PermitRootLogin: prohibit-password
+- PasswordAuthentication: yes
+- PubkeyAuthentication: yes
+- PermitEmptyPasswords: no
+- X11Forwarding: yes
 
 ## Härtungskandidaten
 
