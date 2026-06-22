@@ -1,0 +1,19 @@
+Die Firewall- und Port-Baseline des Ubuntu-Lab-Systems wurde erstellt und dokumentiert.
+
+Geprüft wurden UFW, nftables, lokal lauschende TCP- und UDP-Ports, SSH-Dienststatus, SSH-Autostartstatus, lokaler SSH-Port 22 und fehlgeschlagene systemd Units.
+
+Der aktuelle Zustand zeigt: UFW ist installiert, aber nicht aktiv. Das ist im Lab kein unmittelbarer Fehler, muss in produktionsnahen Umgebungen jedoch bewusst bewertet und dokumentiert werden.
+
+SSH ist aktiv, für den Autostart aktiviert und lauscht lokal auf Port 22. Damit ist der wichtigste administrative Zugriff grundsätzlich vorhanden.
+
+Lokal lauschende Ports wurden erfasst und eingeordnet. Port 22 wurde als SSH-Dienst bewertet. Lokale Resolver- und Systemdienste wurden als typische lokale Dienste eingeordnet.
+
+Private Rohdaten mit IP-Adressen, MAC-Adressen und detaillierten Portausgaben wurden bewusst unter docs/private/evidence abgelegt und nicht öffentlich dokumentiert.
+
+Zusätzlich wurden ein Runbook, eine Checkliste und eine Troubleshooting-Karte für Firewall-, Port- und Zugriffskontrollprobleme erstellt.
+
+Betriebliche Bewertung: Ein lokal lauschender Port bedeutet nicht automatisch externe Erreichbarkeit. Für die Bewertung müssen Dienststatus, Bind-Adresse, Firewallstatus, Routing, Netzwerkpfad und Zugriffsziel getrennt betrachtet werden.
+
+Besonders wichtig ist SSH: Firewall-Änderungen dürfen den administrativen Zugriff nicht unbeabsichtigt unterbrechen. Vor Regeländerungen sind Rückweg, offene Admin-Sitzung und Test der neuen Verbindung einzuplanen.
+
+Nächster professioneller Schritt: Aufbau eines kleinen Firewall-/Port-Health-Checks als wiederverwendbares Prüfskript.
