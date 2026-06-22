@@ -12,8 +12,8 @@ Die Nachprüfung zeigt, dass Fail2ban anschließend normal lief. Der erste Fehle
 
 - Fail2ban Dienststatus: active
 - Fail2ban Autostartstatus: enabled
-- Fail2ban Ping: Server replied: pong 
-- Jail-Liste: `- Jail list:	sshd
+- Fail2ban Ping: Server replied: pong
+- Jail-Liste: sshd
 - SSH-Jail Status Exit-Code: 0
 - Configtest Exit-Code: 0
 
