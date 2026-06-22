@@ -1,6 +1,6 @@
 
 ## Security Baseline Health Check
-Zeitpunkt: 2026-06-22T19:05:36+02:00
+Zeitpunkt: 2026-06-22T19:08:05+02:00
 
 ## Benutzer und sudo
 Aktueller Benutzer: marc
@@ -26,12 +26,12 @@ SSH Port 22 lokal sichtbar: ja
 
 ## SSH Security-Parameter
 PermitRootLogin: prohibit-password
-PasswordAuthentication: yes
+PasswordAuthentication: no
 PubkeyAuthentication: yes
 PermitEmptyPasswords: no
 X11Forwarding: no
 [OK] Root-Login ist nicht unkontrolliert per Passwort erlaubt.
-[WARN] PasswordAuthentication ist aktiv. Dokumentierter Härtungskandidat, keine Sofortänderung.
+[OK] PasswordAuthentication ist deaktiviert.
 [OK] PubkeyAuthentication ist aktiv.
 [OK] Leere Passwörter sind nicht erlaubt.
 [OK] X11Forwarding ist deaktiviert.
