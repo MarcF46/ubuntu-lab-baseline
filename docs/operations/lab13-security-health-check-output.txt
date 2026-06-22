@@ -1,6 +1,6 @@
 
 ## Security Baseline Health Check
-Zeitpunkt: 2026-06-22T19:17:21+02:00
+Zeitpunkt: 2026-06-22T19:21:07+02:00
 
 ## Benutzer und sudo
 Aktueller Benutzer: marc
@@ -38,8 +38,8 @@ X11Forwarding: no
 
 ## Firewall
 [OK] UFW ist installiert.
-UFW Statuszeile: Status: Inaktiv
-[WARN] UFW ist inaktiv. Dokumentierter Härtungskandidat, keine Sofortaktivierung.
+UFW Statuszeile: Status: Aktiv
+[OK] UFW ist aktiv.
 
 ## Updates und Reboot
 [OK] Kein Reboot-Marker vorhanden.
@@ -57,5 +57,5 @@ Fehlgeschlagene systemd Units: 0
 [OK] Keine fehlgeschlagenen systemd Units sichtbar.
 
 ## Ergebnis
-[RESULT] Security Baseline Health Check erfolgreich mit Warnungen.
+[RESULT] Security Baseline Health Check erfolgreich.
 Security-Health-Check Exit-Code: 0
