@@ -1,0 +1,33 @@
+Die Security-Härtung aus Lab 13a und Lab 13b wurde erfolgreich abgeschlossen.
+
+Umgesetzte Änderungen:
+
+- X11Forwarding wurde deaktiviert.
+- PasswordAuthentication wurde deaktiviert.
+- PubkeyAuthentication blieb aktiv.
+- UFW wurde als Host-Firewall aktiviert.
+- Eingehende Verbindungen werden standardmäßig blockiert.
+- Ausgehende Verbindungen bleiben erlaubt.
+- SSH über Port 22/tcp bleibt erlaubt.
+
+Verifikation:
+
+- SSH-Syntaxprüfung erfolgreich.
+- SSH-Key-Login nach den Änderungen erfolgreich.
+- UFW Status aktiv.
+- Security-Health-Check erfolgreich.
+- Git-Arbeitsstand sauber.
+
+Betriebliche Bewertung:
+
+Die Härtung wurde schrittweise und kontrolliert durchgeführt. Zuerst wurden SSH-Härtungskandidaten umgesetzt, anschließend wurde UFW als separater Firewall-Change aktiviert. Der erste UFW-Aktivierungsversuch wurde wegen eines SSH-known_hosts-Precheck-Problems automatisch zurückgerollt. Die Ursache wurde geprüft und der Retry erfolgreich durchgeführt.
+
+Der finale Zustand zeigt eine deutlich bessere Sicherheitsbasis: SSH erlaubt weiterhin Key-basierten Admin-Zugriff, Passwortlogin ist deaktiviert, X11Forwarding ist deaktiviert und die Host-Firewall ist aktiv.
+
+Merksätze:
+
+- Erst prüfen, dann härten.
+- Keine Härtung ohne Rückweg.
+- Alte Sitzung offen lassen, neue Sitzung testen.
+- Erst SSH erlauben, dann Firewall aktivieren.
+- known_hosts ist das Ausweiskontrollbuch von SSH.
