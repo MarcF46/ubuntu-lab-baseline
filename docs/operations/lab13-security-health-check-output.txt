@@ -1,6 +1,6 @@
 
 ## Security Baseline Health Check
-Zeitpunkt: 2026-06-22T18:12:06+02:00
+Zeitpunkt: 2026-06-22T19:05:36+02:00
 
 ## Benutzer und sudo
 Aktueller Benutzer: marc
@@ -29,12 +29,12 @@ PermitRootLogin: prohibit-password
 PasswordAuthentication: yes
 PubkeyAuthentication: yes
 PermitEmptyPasswords: no
-X11Forwarding: yes
+X11Forwarding: no
 [OK] Root-Login ist nicht unkontrolliert per Passwort erlaubt.
 [WARN] PasswordAuthentication ist aktiv. Dokumentierter Härtungskandidat, keine Sofortänderung.
 [OK] PubkeyAuthentication ist aktiv.
 [OK] Leere Passwörter sind nicht erlaubt.
-[WARN] X11Forwarding ist aktiv. Dokumentierter Härtungskandidat, wenn nicht benötigt.
+[OK] X11Forwarding ist deaktiviert.
 
 ## Firewall
 [OK] UFW ist installiert.
