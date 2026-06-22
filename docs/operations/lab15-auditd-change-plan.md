@@ -10,7 +10,7 @@ Im Lab wird geprüft, ob auditd als Audit-Dienst für sicherheitsrelevante Linux
 - auditctl Pfad: nicht_gefunden
 - ausearch Pfad: nicht_gefunden
 - aureport Pfad: nicht_gefunden
-- auditd Unit-Datei:  
+- auditd Unit-Datei: nicht_ermittelt
 - auditd Dienststatus: inactive
 nicht_aktiv
 - auditd Autostartstatus: not-found
