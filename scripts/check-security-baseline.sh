@@ -156,7 +156,7 @@ if command -v ufw >/dev/null 2>&1; then
   ufw_status_line="$(sudo -n ufw status verbose 2>/dev/null | head -n 1 || true)"
   printf "UFW Statuszeile: %s\n" "${ufw_status_line:-nicht_ermittelt}"
 
-  if sudo -n ufw status 2>/dev/null | grep -q '^Status: active'; then
+  if sudo -n ufw status 2>/dev/null | grep -Eq '^Status: (active|Aktiv)'; then
     ok "UFW ist aktiv."
   else
     warning "UFW ist inaktiv. Dokumentierter Härtungskandidat, keine Sofortaktivierung."
