@@ -96,7 +96,7 @@ Wichtige Beispiele:
 
 - 127.0.0.1: Dienst lauscht nur lokal auf dem System.
 - 0.0.0.0: Dienst lauscht auf allen IPv4-Adressen.
-- [::]&#58; Dienst lauscht auf IPv6-Adressen.
+- [::]: Dienst lauscht auf IPv6-Adressen.
 - 192.168.x.x: Dienst lauscht auf einer konkreten lokalen IPv4-Adresse.
 
 Bewertung:
