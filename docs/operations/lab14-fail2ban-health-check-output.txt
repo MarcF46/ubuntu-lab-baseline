@@ -1,0 +1,33 @@
+## Fail2ban SSH Jail Health Check
+Zeitpunkt: 2026-06-22T19:32:34+02:00
+
+## Paket / Client
+[OK] fail2ban-client ist vorhanden.
+
+## Dienststatus
+fail2ban active: active
+fail2ban enabled: enabled
+[OK] Fail2ban-Dienst ist aktiv.
+[OK] Fail2ban ist für Autostart aktiviert.
+
+## Client Readiness
+[OK] fail2ban-client antwortet mit pong.
+
+## SSH Jail
+[OK] sshd-Jail ist in der Jail-Liste vorhanden.
+[OK] sshd-Jail Status ist abrufbar.
+|  |- Currently failed:	0
+|  |- Total failed:	0
+   |- Currently banned:	0
+   |- Total banned:	0
+
+## Konfigurationstest
+[OK] Fail2ban-Konfigurationstest erfolgreich.
+
+## UFW Integration
+UFW Statuszeile: Status: Aktiv
+[OK] UFW ist aktiv.
+
+## Ergebnis
+[RESULT] Fail2ban SSH Jail Health Check erfolgreich.
+Fail2ban-Health-Check Exit-Code: 0
