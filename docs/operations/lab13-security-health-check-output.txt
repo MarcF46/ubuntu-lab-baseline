@@ -1,0 +1,61 @@
+
+## Security Baseline Health Check
+Zeitpunkt: 2026-06-22T18:12:06+02:00
+
+## Benutzer und sudo
+Aktueller Benutzer: marc
+Gruppen: marc adm cdrom sudo dip plugdev users lpadmin lxd
+[OK] Benutzer ist Mitglied der sudo-Gruppe. Für das Admin-Lab plausibel.
+[OK] sudo-Grundprüfung erfolgreich.
+
+## Home- und SSH-Rechte
+Home-Rechte: 750
+.ssh-Rechte: 700
+authorized_keys-Rechte: 600
+[OK] Home-Verzeichnisrechte sind für das Lab plausibel.
+[OK] .ssh-Verzeichnis ist restriktiv gesetzt.
+[OK] authorized_keys ist restriktiv gesetzt.
+
+## SSH Dienst und Port
+SSH Dienststatus: active
+SSH Autostartstatus: enabled
+SSH Port 22 lokal sichtbar: ja
+[OK] SSH-Dienst ist aktiv.
+[OK] SSH-Dienst ist für Autostart aktiviert.
+[OK] SSH-Port 22 lauscht lokal.
+
+## SSH Security-Parameter
+PermitRootLogin: prohibit-password
+PasswordAuthentication: yes
+PubkeyAuthentication: yes
+PermitEmptyPasswords: no
+X11Forwarding: yes
+[OK] Root-Login ist nicht unkontrolliert per Passwort erlaubt.
+[WARN] PasswordAuthentication ist aktiv. Dokumentierter Härtungskandidat, keine Sofortänderung.
+[OK] PubkeyAuthentication ist aktiv.
+[OK] Leere Passwörter sind nicht erlaubt.
+[WARN] X11Forwarding ist aktiv. Dokumentierter Härtungskandidat, wenn nicht benötigt.
+
+## Firewall
+[OK] UFW ist installiert.
+UFW Statuszeile: Status: Inaktiv
+[WARN] UFW ist inaktiv. Dokumentierter Härtungskandidat, keine Sofortaktivierung.
+
+## Updates und Reboot
+[OK] Kein Reboot-Marker vorhanden.
+Offene Paketupdates: 0
+[OK] Keine offenen Paketupdates sichtbar.
+
+## Kritische Datei-Rechte
+/etc/shadow: 640 root:shadow
+/etc/sudoers: 440 root:root
+[OK] /etc/shadow-Rechte wirken plausibel.
+[OK] /etc/sudoers-Rechte wirken plausibel.
+
+## Failed systemd Units
+Fehlgeschlagene systemd Units: 0
+[OK] Keine fehlgeschlagenen systemd Units sichtbar.
+
+## Ergebnis
+[RESULT] Security Baseline Health Check erfolgreich mit Warnungen.
+Security-Health-Check Exit-Code: 0
