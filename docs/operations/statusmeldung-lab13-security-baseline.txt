@@ -1,0 +1,17 @@
+Die Security-Baseline des Ubuntu-Lab-Systems wurde erstellt und dokumentiert.
+
+Geprüft wurden Benutzer- und Gruppenstatus, sudo-Grundzustand, Home- und SSH-Dateirechte, effektive SSH-Konfiguration, SSH-Dienststatus, lokal sichtbarer SSH-Port, Firewall-Status, Update-/Reboot-Hinweise, kritische Systemdatei-Rechte und fehlgeschlagene systemd Units.
+
+Der aktuelle Benutzer ist für das Admin-Lab plausibel in der sudo-Gruppe. Die Rechte von Home-Verzeichnis, .ssh und authorized_keys wurden geprüft und wirken für den SSH-Key-Betrieb restriktiv.
+
+SSH ist aktiv, für Autostart aktiviert und Port 22 ist lokal sichtbar. Die effektive SSH-Konfiguration enthält mehrere spätere Härtungskandidaten, insbesondere PasswordAuthentication und X11Forwarding. Diese Befunde wurden nicht direkt verändert, sondern als spätere kontrollierte Changes eingeordnet.
+
+UFW ist vorhanden, aber nicht aktiv. Dieser Zustand wurde bereits in Lab 11 dokumentiert und bleibt ein späterer Härtungskandidat. Eine Firewall-Aktivierung darf nicht ohne Rückfallplan und gesicherten SSH-Zugriff erfolgen.
+
+Es wurde kein Reboot-Marker festgestellt und fehlgeschlagene systemd Units wurden geprüft. Kritische Datei-Rechte wie /etc/shadow und /etc/sudoers wurden in die Baseline aufgenommen.
+
+Zusätzlich wurden ein Runbook, eine Checkliste und eine Troubleshooting-Karte für Security-Baseline und Härtungsprüfung erstellt.
+
+Betriebliche Bewertung: Die Security-Baseline ist eine Bestandsaufnahme, keine Soforthärtung. Einzelne Befunde sind nicht automatisch ein Incident, sondern müssen fachlich bewertet und als kontrollierte Changes geplant werden.
+
+Nächster professioneller Schritt: Aufbau eines wiederverwendbaren Security-Health-Checks, der zentrale Sicherheitsindikatoren reproduzierbar prüft.
