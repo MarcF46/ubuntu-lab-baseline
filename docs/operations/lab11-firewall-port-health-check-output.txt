@@ -1,0 +1,40 @@
+
+## Firewall / Port Health Check
+Zeitpunkt: 2026-06-22T16:47:35+02:00
+
+## UFW
+[OK] UFW ist installiert.
+UFW Statuszeile: Status: Inaktiv
+[WARN] UFW ist nicht aktiv. Im Lab ist das dokumentiert; in Produktion wäre das ein Bewertungs- und Freigabepunkt.
+
+## nftables
+[OK] nftables-Werkzeug ist vorhanden.
+nftables Ruleset-Zeilen: 0
+[OK] Keine eigenen nftables-Regeln sichtbar.
+
+## SSH
+SSH Dienststatus: active
+SSH Autostartstatus: enabled
+SSH Port 22 lokal sichtbar: ja
+[OK] SSH-Dienst ist aktiv.
+[OK] SSH-Dienst ist für Autostart aktiviert.
+[OK] SSH-Port 22 lauscht lokal.
+
+## Lokale Ports
+Lokal lauschende TCP-Ports: 6
+Lokal gebundene UDP-Ports: 8
+[OK] Mindestens ein TCP-Listener ist vorhanden.
+
+## Bind-Adressen Kurzbewertung
+TCP nur lokal/Loopback sichtbar: 4
+TCP auf allen IPv4-Adressen sichtbar: 1
+TCP auf IPv6-any sichtbar: 1
+[WARN] Mindestens ein TCP-Dienst lauscht auf einer allgemeineren Adresse. Das ist nicht automatisch falsch, muss aber fachlich erklärbar sein.
+
+## Failed systemd Units
+Fehlgeschlagene systemd Units: 0
+[OK] Keine fehlgeschlagenen systemd Units sichtbar.
+
+## Ergebnis
+[RESULT] Firewall / Port Health Check erfolgreich mit Warnungen.
+Firewall-Port-Health-Check Exit-Code: 0
