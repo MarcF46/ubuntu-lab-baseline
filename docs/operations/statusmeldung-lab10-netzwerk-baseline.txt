@@ -1,0 +1,15 @@
+Die Netzwerk-Baseline des Ubuntu-Lab-Systems wurde erstellt und dokumentiert.
+
+Geprüft wurden Netzwerkschnittstellen, IP-Konfiguration, Default Route, DNS-Auflösung, externe Erreichbarkeit per IP und Domain sowie lokal offene TCP- und UDP-Ports.
+
+Der aktuelle Zustand ist unauffällig: Das System besitzt eine aktive Netzwerkschnittstelle über eno1, eine gültige IPv4-Konfiguration, eine vorhandene Default Route, funktionierende DNS-Auflösung und erfolgreiche externe Erreichbarkeit per IP und Domain.
+
+Lokal lauschende Ports wurden erfasst und eingeordnet. Port 22 ist als SSH-Dienst sichtbar. Lokale DNS-Resolver-Ports und lokale Druckdienst-Ports wurden als typische lokale Systemdienste bewertet.
+
+Private Rohdaten mit IP- und MAC-Adressen wurden bewusst unter docs/private/evidence abgelegt und nicht öffentlich dokumentiert.
+
+Zusätzlich wurden ein Runbook, eine Checkliste und eine Troubleshooting-Karte für Netzwerk-Baseline und Netzwerkdiagnose erstellt.
+
+Betriebliche Bewertung: Netzwerkdiagnose muss IP-Konfiguration, Routing, DNS, Erreichbarkeit und Portzustände getrennt betrachten. Viele Fehler entstehen dadurch, dass DNS-, Routing-, Firewall- und Dienstprobleme vorschnell vermischt werden.
+
+Nächster professioneller Schritt: Aufbau eines kleinen Netzwerk-Health-Checks als wiederverwendbares Prüfskript.
