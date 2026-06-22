@@ -1,0 +1,19 @@
+Die Backup-/Restore-Baseline und ein kontrollierter Restore-Test wurden im Ubuntu-Lab durchgeführt und dokumentiert.
+
+Geprüft wurden verfügbare Werkzeuge wie tar, gzip, sha256sum, rsync, df und findmnt. Der verfügbare Speicherplatz auf dem Root-Dateisystem war für den Lab-Test ausreichend.
+
+Für den praktischen Test wurden ausschließlich harmlose Lab-Testdaten verwendet. Es wurden keine echten Benutzer-, System-, Passwort-, Secret-, Token-, Schlüssel- oder produktiven Anwendungsdaten gesichert.
+
+Der Backup-Test umfasste die Erstellung eines komprimierten TAR-Archivs, die Erzeugung einer SHA-256-Prüfsumme, die erfolgreiche Prüfsummenprüfung, die Wiederherstellung in ein separates Restore-Ziel und den Vergleich zwischen Quelle und Restore.
+
+Das Ergebnis war erfolgreich: Prüfsummenprüfung, Restore und Vergleich wurden jeweils mit Exit-Code 0 abgeschlossen.
+
+Private Testdaten, Backup-Artefakte, Prüfsummen und Restore-Ziele wurden bewusst unter docs/private/evidence abgelegt und nicht öffentlich dokumentiert.
+
+Zusätzlich wurden ein Runbook, eine Checkliste und eine Troubleshooting-Karte für kontrollierte Backup-/Restore-Tests erstellt.
+
+Betriebliche Bewertung: Ein Backup ist erst dann belastbar, wenn ein Restore erfolgreich getestet wurde. Ein vorhandenes Archiv allein beweist noch keine Wiederherstellbarkeit.
+
+Produktionsnah müssten zusätzlich Aufbewahrung, Verschlüsselung, Zugriffsschutz, Offsite-Kopie, Restore-Zeit, Restore-Punkt, Monitoring, Ransomware-Schutz, Verantwortlichkeiten und regelmäßige Restore-Tests definiert werden.
+
+Nächster professioneller Schritt: Aufbau eines wiederverwendbaren Backup-/Restore-Health-Checks.
