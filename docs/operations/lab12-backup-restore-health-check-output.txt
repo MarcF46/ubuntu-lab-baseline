@@ -1,0 +1,40 @@
+
+## Backup / Restore Health Check
+Zeitpunkt: 2026-06-22T17:56:02+02:00
+
+## Werkzeuge
+[OK] tar ist vorhanden.
+[OK] gzip ist vorhanden.
+[OK] sha256sum ist vorhanden.
+[OK] diff ist vorhanden.
+[OK] find ist vorhanden.
+[OK] du ist vorhanden.
+[OK] df ist vorhanden.
+
+## Artefakte
+[OK] Quell-Testverzeichnis vorhanden.
+[OK] Artefakt-Verzeichnis vorhanden.
+[OK] Backup-Archiv vorhanden.
+Archivgröße: 4.0K
+[OK] Prüfsummendatei vorhanden.
+[OK] Restore-Verzeichnis vorhanden.
+
+## Dateizählung
+Quelldateien: 3
+Wiederhergestellte Dateien: 3
+[OK] Dateianzahl zwischen Quelle und Restore ist plausibel.
+
+## Prüfsumme
+[OK] Prüfsummenprüfung erfolgreich.
+
+## Restore-Vergleich
+[OK] Quelle und Restore sind identisch.
+
+## Speicherplatz
+Root-Dateisystem Belegung: 10%
+Root-Dateisystem frei: 130G
+[OK] Root-Dateisystem hat ausreichend Reserve für diesen Lab-Nachweis.
+
+## Ergebnis
+[RESULT] Backup / Restore Health Check erfolgreich.
+Backup-Restore-Health-Check Exit-Code: 0
