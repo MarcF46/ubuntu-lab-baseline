@@ -30,9 +30,9 @@ Die Trennung zwischen privaten Rohdaten und öffentlicher Bewertung ist bewusst 
 
 | Bereich | Lab-Bewertung | Production-Bewertung |
 |---|---|---|
-| Speicherplatzschutz | Rotation reicht als Grundschutz | Zusätzlich Monitoring auf Disk Usage, Inodes und Logwachstum nötig |
+| Speicherplatzschutz | Rotation reicht als Grundschutz | Zusätzlich Monitoring auf Disk Usage (Speicherplatzbelegung), Inodes (Index Nodes, Dateisystem-Verwaltungseinträge) und Logwachstum nötig |
 | Nachvollziehbarkeit | Lokale Prüfung ausreichend | Aufbewahrung muss zu Audit-, Security- und Compliance-Anforderungen passen |
-| Kompression | Sinnvoll zur Platzersparnis | Mit SIEM, Suche und Incident Response abstimmen |
+| Kompression | Sinnvoll zur Platzersparnis | Mit SIEM (Security Information and Event Management, zentrale Sicherheitslog- und Alarmplattform), Suche und Incident Response (Reaktion auf Sicherheits- oder Betriebsereignisse) abstimmen |
 | Löschfristen | Technisch bewertet | Fachlich, rechtlich und sicherheitlich festlegen |
 | Fehlererkennung | Manuelle Prüfung möglich | Alerts bei fehlgeschlagener Rotation oder volllaufenden Logs erforderlich |
 
