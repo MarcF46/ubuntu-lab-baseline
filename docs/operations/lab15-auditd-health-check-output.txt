@@ -1,0 +1,31 @@
+## auditd Baseline Health Check
+Zeitpunkt: 2026-06-23T10:18:00+02:00
+## Werkzeuge
+[OK] auditctl ist vorhanden.
+[OK] ausearch ist vorhanden.
+[OK] aureport ist vorhanden.
+[OK] augenrules ist vorhanden.
+
+## Dienststatus
+auditd active: active
+auditd enabled: enabled
+[OK] auditd ist aktiv.
+[OK] auditd ist für Autostart aktiviert.
+
+## Konfigurationspfade mit sudo prüfen
+[OK] /etc/audit/auditd.conf vorhanden.
+[OK] /etc/audit/rules.d vorhanden.
+[OK] /etc/audit/rules.d/audit.rules vorhanden.
+[OK] Lab15-Regeldatei im System vorhanden.
+
+## auditctl Status
+[OK] auditctl -s erfolgreich.
+[OK] auditctl -l erfolgreich.
+lab15_identity_changes Regelanzahl: 4
+lab15_sudoers_changes Regelanzahl: 2
+[OK] Identity-Audit-Regeln geladen.
+[OK] sudoers-Audit-Regeln geladen.
+
+## Ergebnis
+[RESULT] auditd Baseline Health Check erfolgreich.
+auditd Health-Check Exit-Code: 0
