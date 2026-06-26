@@ -1,0 +1,13 @@
+[Unit]
+Description=Lab18 Monitoring Agent Healthcheck
+# Project documentation: docs/operations/lab18b-agent-zielbild-rechtemodell.md
+Documentation=man:systemd.service(5)
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/projects/ubuntu-lab-baseline
+ExecStart=%h/projects/ubuntu-lab-baseline/scripts/lab18-monitoring-agent-safe.sh
+TimeoutStartSec=120
+
+[Install]
+WantedBy=default.target
