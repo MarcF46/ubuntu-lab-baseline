@@ -1,0 +1,14 @@
+[Unit]
+Description=Run Lab18 Monitoring Agent regularly
+# Project documentation: docs/operations/lab18b-agent-zielbild-rechtemodell.md
+Documentation=man:systemd.timer(5)
+
+[Timer]
+OnActiveSec=30s
+OnUnitActiveSec=5min
+AccuracySec=10s
+Unit=lab18-monitoring-agent.service
+Persistent=false
+
+[Install]
+WantedBy=timers.target
