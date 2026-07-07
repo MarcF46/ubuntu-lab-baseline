@@ -6,6 +6,14 @@ Dieses Repository dokumentiert eine technische Linux-Admin-Baseline für ein Ubu
 
 Der Schwerpunkt liegt auf systematischer Administration, Healthchecks, Dienstdiagnose, kontrollierten Änderungen, Sicherheitsgrundlagen, Monitoring-Grundlagen, Backup-/Restore-Prüfungen und strukturierter Betriebsdokumentation.
 
+
+## Einordnung und Lernziel
+
+Dieses Repository dokumentiert ein Linux-Junior-Admin-Lab.
+
+Der Fokus liegt auf dem Aufbau belastbarer Grundlagen für Administration, Fehlersuche und technische Bewertung. Viele Themen orientieren sich an produktionsnahen Anforderungen und an der Denkweise des BSI-IT-Grundschutzes, ohne eine vollständige BSI-konforme Umsetzung oder Zertifizierung abzubilden.
+
+Ziel ist es, wiederholbare Diagnoseabläufe, nachvollziehbare Dokumentation und saubere Betriebsentscheidungen zu trainieren. Das Lab dient als Grundlage für weiterführende Lernprojekte in Richtung Windows Server, Active Directory, Microsoft 365, Cloud-/Hybrid-Infrastruktur und Architekturplanung.
 ## Systemkontext
 
 - Betriebssystem: Ubuntu
