@@ -21,6 +21,12 @@ Ziel ist es, wiederholbare Diagnoseabläufe, nachvollziehbare Dokumentation und 
 - Ziel: nachvollziehbare technische Basis für Administration, Diagnose und Betrieb
 - Dokumentationsstil: technische Bewertung, Runbooks, Incident Cards, Statusberichte und Arbeitsaufträge
 
+## Architektur im Überblick
+
+![Architekturdiagramm der Ubuntu-Administration](docs/architecture/ubuntu-administration.svg)
+
+Das Diagramm ordnet die einzelnen Übungen in einen gemeinsamen Administrationskontext ein: Der Zugriff erfolgt per SSH, anschließend werden Dienste, Ports, Firewall, Logs, Backup und Monitoring nicht isoliert, sondern als zusammenhängende Diagnose- und Betriebsbereiche betrachtet.
+
 ## Dokumentationsstruktur
 
 | Pfad | Inhalt |
